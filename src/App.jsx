@@ -3,6 +3,7 @@ import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import ProtectedRoute from './components/ProtectedRoute'
 import Members from './pages/Members'
+import Donations from './pages/Donations'
 
 export default function App() {
   return (
@@ -10,6 +11,9 @@ export default function App() {
       <Routes>
         <Route path="/members" element={
           <ProtectedRoute><Members /></ProtectedRoute>
+        } />
+        <Route path="/donations" element={
+           <ProtectedRoute><Donations /></ProtectedRoute>
         } />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={

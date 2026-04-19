@@ -96,7 +96,16 @@ export default function Dashboard() {
             </table>
           )}
         </div>
+        
       </main>
+      {/* Donations Card */}
+        <div className="bg-white rounded-2xl shadow p-6 mt-6">
+          <div className="flex justify-between items-center">
+            <h3 className="font-semibold text-gray-700 text-lg">Transactions</h3>
+            <a href="/donations" className="text-sm text-indigo-500 font-medium hover:underline">View all donations →</a>
+          </div>
+          <p className="text-sm text-gray-400 mt-2">Track all donation records here.</p>
+        </div>
     </div>
   )
 }
